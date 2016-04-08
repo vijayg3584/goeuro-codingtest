@@ -14,6 +14,16 @@ public class CityDataWriter {
 	private static final String EOL = System.getProperty("line.separator");
 	private static final String CSV_FILE_EXTN = ".csv";
 
+	/**
+	 * Writes city information into csv file.
+	 * <p>The following fields are written. <br/> 
+	 * <b>_id, name, type, latitude, longitude</b><br/><br/>
+	 * The output file location is printed on console.</p>
+	 * 
+	 * @param cityInfoList <code>List</code> of <code>CityInfo</code>
+	 * @param cityName name of the city used as the filename - cityName.csv
+	 * @throws IOException
+	 */
 	public static void writeCityInfoToCSVFile(List<CityInfoVO> cityInfoList, String cityName) throws IOException {
 		FileWriter fileWriter = null;
 		try {

@@ -23,6 +23,13 @@ public class CityDataRetriever {
 	private static final String CITY_API_ENDPOINT = "http://api.goeuro.com/api/v2/position/suggest/en/";
 	
 	
+	/**
+	 * Gets city information of cities matching the name from the API endpoint "http://api.goeuro.com/api/v2/position/suggest/en/" 
+	 *  
+	 * @param cityName
+	 * @return <code>List</code> of <code>CityInfo</code>
+	 * @throws Exception
+	 */
 	public static List<CityInfoVO> getCityInformation(String cityName) throws Exception {
 		
 		List<CityInfoVO> cityInfoList  = null;

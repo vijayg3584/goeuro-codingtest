@@ -13,7 +13,7 @@ public class Main {
 		
 		if(args.length>0)
 		{
-			String cityName = getCompleteCityName(args);
+			String cityName = getCompleteCityName(args);//handling city names with spaces
 			try {
 				
 				System.out.println("Program started for city: "+cityName );
